@@ -1,11 +1,11 @@
 // API : https://openweathermap.org/api
 
 // Clé api
-const API_KEY = "4081444b7b90198136fefe6ed4ccf35b";
+const API_KEY = "4081444b7b90198136fefe6ed4ccf35b"; // login 
 // Url API
-const API_URL = "https://api.openweathermap.org/data/2.5/weather";
+const API_URL = "https://api.openweathermap.org/data/2.5/weather"; // recup donner serveur
 // Base source icon
-const API_URL_ICON = "http://openweathermap.org/img/wn/";
+const API_URL_ICON = "http://openweathermap.org/img/wn/"; 
 
 
 class API_WEATHER{
