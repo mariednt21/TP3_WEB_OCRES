@@ -45,7 +45,7 @@ function Actualize() {
     .then(function(response) {
       // Récupère la donnée d'une API
       const data = response.data;
-
+     
       // On récupère l'information principal
       const main = data.weather[0].main;
       const description = data.weather[0].description;
