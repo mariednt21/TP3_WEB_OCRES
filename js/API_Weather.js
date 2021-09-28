@@ -14,6 +14,7 @@ class API_WEATHER{
     if(city === undefined){
       city = "paris";
     }
+
     this.city = city;
   }
 
