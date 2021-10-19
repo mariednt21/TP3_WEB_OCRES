@@ -26,7 +26,7 @@ function start() {
       document.getElementById('today-forecast-main').innerHTML = main;
       document.getElementById('today-forecast-more-info').innerHTML = description;
       document.getElementById('icon-weather-container').innerHTML = icon;
-      document.getElementById('today-forecast-temp').innerHTML = `${temp}°C`;
+      document.getElementById('today-forecast-temp').innerHTML = `${temp - 273}°C`;
 
       // On récupère l'information principal pour demain
       const main1 = data.list[1].weather[0].main;
@@ -38,7 +38,7 @@ function start() {
       document.getElementById('today-forecast-main-demain').innerHTML = main1;
       document.getElementById('today-forecast-more-info-demain').innerHTML = description1;
       document.getElementById('icon-weather-container-demain').innerHTML = icon1;
-      document.getElementById('today-forecast-temp-demain').innerHTML = `${temp1}°C`;
+      document.getElementById('today-forecast-temp-demain').innerHTML = `${temp1 - 273}°C`;
 
       // On récupère l'information principal pour après demain
       const main2 = data.list[2].weather[0].main;
@@ -50,7 +50,7 @@ function start() {
       document.getElementById('today-forecast-main-apresdemain').innerHTML = main2;
       document.getElementById('today-forecast-more-info-apresdemain').innerHTML = description2;
       document.getElementById('icon-weather-container-apresdemain').innerHTML = icon2;
-      document.getElementById('today-forecast-temp-apresdemain').innerHTML = `${temp2}°C`;
+      document.getElementById('today-forecast-temp-apresdemain').innerHTML = `${temp2 - 273}°C`;
 
       // On récupère l'information principal pour encore après demain
       const main3 = data.list[3].weather[0].main;
@@ -62,7 +62,7 @@ function start() {
       document.getElementById('today-forecast-main-encoreapresdemain').innerHTML = main3;
       document.getElementById('today-forecast-more-info-encoreapresdemain').innerHTML = description3;
       document.getElementById('icon-weather-container-encoreapresdemain').innerHTML = icon3;
-      document.getElementById('today-forecast-temp-encoreapresdemain').innerHTML = `${temp3}°C`;
+      document.getElementById('today-forecast-temp-encoreapresdemain').innerHTML = `${temp3 - 273}°C`;
 
 
     })
